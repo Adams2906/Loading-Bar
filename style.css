@@ -2,19 +2,23 @@
     position: absolute;
     bottom: -18px;
     left: 0px;
-    filter: blur(550px);
     background-color: #62a1ea;
     width: 642px;
     height: 75px;
+    filter: blur(400px);   /* Use a smaller blur value */
+    overflow: hidden;     /* Contain the blur within the element */
+    max-height: 300px;
 }
 .blur-grey {
     position: absolute;
     right: 0px;
     bottom: -18px;
-    filter: blur(550px);
     background-color: #99a4b1;
     width: 700px;
     height: 75px;
+    filter: blur(400px);   /* Use a smaller blur value */
+    overflow: hidden;     /* Contain the blur within the element */
+    max-height: 300px;
 }
 .loader-bar-icon {
     position: absolute;
