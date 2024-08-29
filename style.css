@@ -31,11 +31,9 @@
     width: 256px;
 }
 .frame {
-    width: 100%;
     position: relative;
     background-color: #090909;
     height: 1024px;
-    overflow: hidden;
     text-align: center;
     font-size: 14px;
     color: #fff;
