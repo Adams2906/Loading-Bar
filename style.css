@@ -5,7 +5,7 @@
     left: 0px;
     background-color: #62a1ea;
     width: 100%; /* Adjust to full width */
-    height: 150px; /* Increased height for better visibility */
+    height: 40px; /* Increased height for better visibility */
     filter: blur(150px); /* Adjust blur for better responsiveness */
     overflow: hidden;
     z-index: 1; /* Ensure it stays behind other content */
@@ -17,7 +17,7 @@
     bottom: -18px;
     background-color: #99a4b1;
     width: 100%; /* Adjust to full width */
-    height: 150px; /* Increased height for better visibility */
+    height: 40px; /* Increased height for better visibility */
     filter: blur(150px); /* Adjust blur for better responsiveness */
     overflow: hidden;
     z-index: 1; /* Ensure it stays behind other content */
