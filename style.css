@@ -1,26 +1,19 @@
-.blur-child {
+.blur-blue {
     position: absolute;
-    bottom: 0px;
+    bottom: -18px;
     left: 0px;
     filter: blur(550px);
     background-color: #62a1ea;
     width: 642px;
     height: 75px;
 }
-.blur-item {
+.blur-grey {
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: -18px;
     filter: blur(550px);
     background-color: #99a4b1;
     width: 700px;
-    height: 75px;
-}
-.blur {
-    position: absolute;
-    bottom: -18px;
-    left: 0px;
-    width: 1440px;
     height: 75px;
 }
 .loader-bar-icon {
@@ -49,6 +42,8 @@
     font-family: Poppins;
 }
 
+
+
 .body{
-    background-color: #1d1c1c;
+    background-color: #090909;
 }
