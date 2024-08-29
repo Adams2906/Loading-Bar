@@ -1,43 +1,59 @@
+/* Blur elements */
 .blur-blue {
     position: absolute;
     bottom: -18px;
     left: 0px;
     background-color: #62a1ea;
-    width: 642px;
-    height: 75px;
-    filter: blur(400px);   /* Use a smaller blur value */
-    overflow: hidden;     /* Contain the blur within the element */
-    max-height: 300px;
+    width: 100%; /* Adjust to full width */
+    height: 150px; /* Increased height for better visibility */
+    filter: blur(150px); /* Adjust blur for better responsiveness */
+    overflow: hidden;
+    z-index: 1; /* Ensure it stays behind other content */
 }
+
 .blur-grey {
     position: absolute;
     right: 0px;
     bottom: -18px;
     background-color: #99a4b1;
-    width: 700px;
-    height: 75px;
-    filter: blur(400px);   /* Use a smaller blur value */
-    overflow: hidden;     /* Contain the blur within the element */
-    max-height: 300px;
+    width: 100%; /* Adjust to full width */
+    height: 150px; /* Increased height for better visibility */
+    filter: blur(150px); /* Adjust blur for better responsiveness */
+    overflow: hidden;
+    z-index: 1; /* Ensure it stays behind other content */
 }
+
+/* Loader icon */
 .loader-bar-icon {
     position: absolute;
-    top: 393px;
-    left: 703px;
-    width: 34px;
-    height: 34px;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center precisely */
+    width: 10vw; /* Adjust size based on viewport width */
+    max-width: 34px; /* Cap the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure it stays above the blur */
 }
+
+/* Text */
 .just-a-moment {
     position: absolute;
-    top: 439px;
-    left: calc(50% - 128px);
+    top: calc(50% + 46px); /* Position below the loader icon */
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
-    width: 256px;
+    width: 80%; /* Make width responsive */
+    max-width: 256px;
+    font-size: 1rem; /* Base font size */
+    text-align: center;
+    z-index: 2; /* Ensure it stays above the blur */
 }
+
+/* Frame */
 .frame {
     position: relative;
     background-color: #090909;
-    height: 840px;
+    height: 100vh; /* Full height of the viewport */
     text-align: center;
     font-size: 14px;
     color: #fff;
@@ -45,9 +61,34 @@
     overflow-x: hidden;
 }
 
-
-
-.body{
+/* Body */
+.body {
     background-color: #090909;
     overflow-x: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .loader-bar-icon {
+        width: 20vw; /* Increase relative size on smaller screens */
+    }
+
+    .just-a-moment {
+        font-size: 0.9rem; /* Slightly smaller text on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .blur-blue, .blur-grey {
+        height: 100px; /* Reduce height for very small screens */
+        filter: blur(100px); /* Reduce blur */
+    }
+
+    .loader-bar-icon {
+        width: 25vw; /* Further increase relative size on very small screens */
+    }
+
+    .just-a-moment {
+        font-size: 0.8rem; /* Further reduce text size */
+    }
 }
