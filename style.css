@@ -1,0 +1,24 @@
+.blur-child {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(550px);
+    background-color: #62a1ea;
+    width: 642px;
+    height: 75px;
+}
+.blur-item {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    filter: blur(550px);
+    background-color: #99a4b1;
+    width: 700px;
+    height: 75px;
+}
+.blur {
+    width: 100%;
+    position: relative;
+    height: 75px;
+}
+
